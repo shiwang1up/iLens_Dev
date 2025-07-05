@@ -95,3 +95,35 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+
+
+
+
+iLens/
+├── android/                   # Native Android project files
+├── ios/                       # Native iOS project files
+├── assets/                    # Images, fonts, etc.
+├── src/                       # Main source code
+│   ├── api/                   # API service layers (abstractions)
+│   ├── components/            # Reusable UI components
+│   ├── constants/             # Colors, typography, app-wide constants
+│   ├── context/               # React contexts for state management
+│   ├── hooks/                 # Custom React hooks
+│   ├── navigation/            # Navigation stacks (React Navigation)
+│   ├── screens/               # Screen/page-level components
+│   │   ├── Home/              # One folder per screen (SRP)
+│   │   │   ├── index.tsx      # UI component
+│   │   │   ├── styles.ts      # Styles
+│   │   │   └── logic.ts       # Optional business logic (or use hook)
+│   ├── services/              # Business logic/services layer
+│   ├── storage/               # Local storage abstraction (AsyncStorage, MMKV)
+│   ├── utils/                 # Utility functions (formatters, validators)
+│   ├── types/                 # TypeScript types/interfaces
+│   └── App.tsx                # App entry point
+├── .env                       # Environment variables
+├── .gitignore
+├── app.json / expo.json       # App configuration
+├── package.json
+└── tsconfig.json              # TypeScript config
